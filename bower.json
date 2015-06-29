@@ -1,0 +1,23 @@
+{
+  "name": "WestCoastWebsite",
+  "version": "1",
+  "authors": [
+    "Josh <lighteningbluejosh@gmail.com>"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.13.2",
+    "ember-data": "~1.13.4"
+  }
+}

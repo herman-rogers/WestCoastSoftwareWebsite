@@ -1,0 +1,26 @@
+<div>
+  <!--{{main-header}}-->
+</div>
+
+<section>
+    <div  class="container">
+
+      <form>
+        <h2>Sign In</h2>
+        <br>
+        {{input type="email" class="ember-view ember-text-field form-control login-input" placeholder="Email" value=email}}
+        <br>
+        {{input type="password" class="ember-view ember-text-field form-control login-input-pass" placeholder="password" value=password}}
+
+        <br><br>
+
+        <button class="btn btn-primary btn-block btn-center" type="submit" {{action 'login'}}>
+          Sign In
+          &nbsp;
+        </button>
+        <br>
+      </form>
+
+    </div>
+
+</section>

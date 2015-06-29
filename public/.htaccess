@@ -1,0 +1,13 @@
+php_flag expose_php off
+php_flag magic_quotes_gpc off
+
+Options -MultiViews
+
+RewriteEngine on
+AddType application/vnd.unity unity3d
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+

@@ -1,0 +1,25 @@
+.env
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/tests/compiled
+/public/dist/js
+/public/dist/styles
+
+# dependencies
+/bower_components
+/node_modules
+/vendor
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+.settings
+*.sln
+*.suo
+*.idea
