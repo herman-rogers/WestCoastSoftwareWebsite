@@ -1,26 +1,38 @@
 <div>
-  <!--{{main-header}}-->
+  <br>
+    <br>
+    <br>
+
 </div>
 
-<section>
-    <div  class="container">
+<section>{{notification-list notifications=application.currentNotifications closeNotification='closeNotification'}}
 
-      <form>
-        <h2>Sign In</h2>
-        <br>
+  <div class="container">
+
+    <br>
+      <br>
+      <br>
+      <br>
+    <form>
+      <h2>Sign In</h2>
+      <br>
         {{input type="email" class="ember-view ember-text-field form-control login-input" placeholder="Email" value=email}}
-        <br>
+      <br>
         {{input type="password" class="ember-view ember-text-field form-control login-input-pass" placeholder="password" value=password}}
 
-        <br><br>
 
-        <button class="btn btn-primary btn-block btn-center" type="submit" {{action 'login'}}>
-          Sign In
-          &nbsp;
-        </button>
-        <br>
-      </form>
 
-    </div>
+      <button class="btn btn-primary btn-block btn-center" type="submit" {{action 'login'}}>
+        Sign In
+        &nbsp;
+      </button>
+      <br>
+    </form>
 
+  </div>
+
+  <div>
+      {{main-footer pushNotification='pushNotification'}}
+  </div>
 </section>
+

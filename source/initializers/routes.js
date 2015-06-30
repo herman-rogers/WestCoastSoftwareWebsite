@@ -1,6 +1,7 @@
 App.Router.map( function() {
         //Page Routes
-        this.route( 'blog');
-        this.route('admin');
-        this.route('loginpage');
+    this.resource( 'index', { path: '/' });
+        this.resource( 'blog');
+        this.resource('admin');
+        this.resource('loginpage');
 });

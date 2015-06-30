@@ -1,16 +1,23 @@
-<!--Social Medial Circles-->
+<div>
 
+    {{main-header}}
+    {{notification-list notifications=index.currentNotifications closeNotification='closeNotification'}}
+
+</div>
 
 <!--Navbar - Home, About and Contact. Fixed position follows user down page-->
 <header id="header" role="banner">
   <!-- Navigation -->
-  {{main-header}}
 </header>
 
 <!--Main Body-->
 <div class="container">
-
-
+  <br>
+  <br><br><br><br><br><br><br>
+  <button class="btn btn-primary btn-block btn-center" type="submit" {{action 'login'}}>
+    Sign In
+    &nbsp;
+  </button>
 
 
   <!--Footer containing copyright, logos and social media-->
