@@ -18,6 +18,12 @@
   ],
   "dependencies": {
     "ember": "~1.13.2",
-    "ember-data": "~1.13.4"
-  }
+    "ember-data": "~1.13.4",
+    "handlebars": "~3.0.3",
+    "jquery-cookie": "~1.4.1",
+    "bootstrap": "~3.3.5",
+    "trumbowyg": "~1.1.7",
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {}
 }

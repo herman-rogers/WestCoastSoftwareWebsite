@@ -115,11 +115,25 @@ a[style]:hover {
     max-width: 20em;
     min-width: 20em;
     max-height: 20em;
-    -webkit-animation: fade 3s;
+    /*-webkit-animation: fade 30s;*/
+    /*-webkit-animation-fill-mode: both;*/
+    /*animation-name: fade;*/
+    /*animation-duration: 3s;*/
+    /*animation-fill-mode: both;*/
+}
+
+.alert-close {
+    clear: both;
+    z-index: 1000;
+    max-width: 20em;
+    min-width: 20em;
+    max-height: 20em;
+    -webkit-animation: fade 30s;
     -webkit-animation-fill-mode: both;
-    animation-name: fade;
+    -animation-name: fade;
     animation-duration: 3s;
     animation-fill-mode: both;
+    animation-direction: reverse;
 }
 
 @-webkit-keyframes fade {
@@ -136,7 +150,7 @@ a[style]:hover {
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -154,6 +168,6 @@ a[style]:hover {
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }

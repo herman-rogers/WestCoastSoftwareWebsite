@@ -64,7 +64,7 @@ App.NotificationListComponent = Ember.Component.extend( {
         if(this.notifications != null){
             this.notifications.forEach(function(notification){
                 Ember.run.later( this, function () {
-                    if ( this.notifications.indexOf( notification ) >= 0 ) {
+                    if ( this.notifications.indexOf( notification ) >= 4 ) {
                         this.send( 'closeAlert', notification );
                     }
                 }, 3000 );
@@ -84,14 +84,17 @@ App.NotificationListComponent = Ember.Component.extend( {
             if ( index >= 0 ) {
                 var notification = notifications[ index ];
                 Ember.run.later( this, function () {
-                    if ( notifications.indexOf( notification ) >= 0 ) {
-                        this.send( 'closeAlert', notification );
+                    //If more than 4 notifications are displayed, close the oldest/first one
+                    if ( notifications.indexOf( notification ) >= 4 ) {
+                        this.send( 'closeAlert', notifications[0] );
                     }
+                    //Checks every 3 seconds
                 }, 3000 );
             }
         }
         //update last length
         this.set('lastLength', notifications.length);
+        //Monitor the length of the array, if it changes execute the function
     }.observes('notifications.length'),
 
     actions: {
