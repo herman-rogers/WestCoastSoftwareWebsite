@@ -29,7 +29,6 @@ App.ApplicationRoute = Ember.Route.extend({
 App.ApplicationController = Ember.Controller.extend({
 
     currentNotifications: [],
-    randomInt: 0,
 
     notification: Ember.Object.extend({
         title: null,
@@ -45,7 +44,7 @@ App.ApplicationController = Ember.Controller.extend({
 
         notification.setProperties({
             title: test,
-            message: message + this.randomInt,
+            message: message,
             error: error
         });
 
@@ -55,7 +54,6 @@ App.ApplicationController = Ember.Controller.extend({
         }
 
         currentNotifications.pushObject(notification);
-        this.randomInt = currentNotifications.lastIndexOf(notification);
     },
 
     closeNotification: function(notification) {
@@ -63,8 +61,6 @@ App.ApplicationController = Ember.Controller.extend({
         var index = currentNotifications.indexOf(notification);
         //remove notification
         currentNotifications.removeAt(index);
-        //Track the indices of the notifications. Returns the index of the last notification
-        this.randomInt = currentNotifications.lastIndexOf(notification);
     },
 
     updateCurrentPath: function() {
@@ -92,6 +88,7 @@ Ember.Application.initializer({
                 this._super();
                 this.set('authToken', $.cookie('auth_token'));
                 this.set('authAccountId', $.cookie('auth_account'));
+                this.set('isLoggedIn', false);
             },
 
             authTokenChanged: function() {
@@ -116,4 +113,6 @@ Ember.$.ajaxPrefilter( function( option, originalOption, jqXHR ) {
         jqXHR.setRequestHeader( 'X-AUTHENTIFICATION-TOKEN',
             App.Session.get( 'authToken' ) );
     }
+
+
 })

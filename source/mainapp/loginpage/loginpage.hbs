@@ -1,15 +1,14 @@
 <div>
-  <br>
-    <br>
-    <br>
+    {{main-header}}
+    {{notification-list notifications=application.currentNotifications closeNotification='closeNotification'}}
 
 </div>
 
 <section>
-    {{notification-list notifications=application.currentNotifications closeNotification='closeNotification'}}
 
-  <div class="container">
-
+  <div class="container" style="padding-top: 90px">
+    <button class="btn btn-primary" style="float: right; vertical-align: top" {{action 'gotoRegister'}}>Register</button>
+    </div>
     <br>
       <br>
       <br>
@@ -29,8 +28,6 @@
       </button>
       <br>
     </form>
-
-  </div>
 
   <div>
       {{main-footer pushNotification='pushNotification'}}

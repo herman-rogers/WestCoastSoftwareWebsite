@@ -1,0 +1,35 @@
+<section>
+    {{main-header}}
+    {{notification-list notifications=application.currentNotifications closeNotification='closeNotification'}}
+
+  <div class="container">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <form>
+      <h2>Register</h2>
+      <br>
+        {{input id="name" type="text" class="ember-view ember-text-field form-control login-input" placeholder="Your Name" value=model.name}}
+      <br>
+        {{input id="email" type="text" class="ember-view ember-text-field form-control login-input" placeholder="Your Email" value=model.email}}
+      <br>
+        {{input id="password" type="password" class="ember-view ember-text-field form-control login-input-pass" placeholder="Enter Password" value=model.password}}
+
+
+
+      <button class="btn btn-primary btn-block btn-center" type="submit" {{action 'register'}}>
+        Submit
+        &nbsp;
+      </button>
+      <br>
+    </form>
+
+  </div>
+
+  <div>
+      {{main-footer pushNotification='pushNotification'}}
+  </div>
+</section>
+

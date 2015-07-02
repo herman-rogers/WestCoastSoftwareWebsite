@@ -67,7 +67,7 @@ return [
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'westcoast'),
+            'database' => env('DB_DATABASE', 'westcoastsoftware'),
             'username' => env('DB_USERNAME', 'postgres'),
             'password' => env('DB_PASSWORD', 'westcoast'),
             'charset'  => 'utf8',
