@@ -15,12 +15,12 @@ use Illuminate\Http\Request;
     class UserController extends Controller
     {
 
-//        protected $_validation;
+        protected $_validation;
 
-//        public function __construct(UserValidator $validator)
-//    {
-//        $this->_validation = $validator;
-//    }
+        public function __construct(UserValidator $validator)
+    {
+        $this->_validation = $validator;
+    }
 
         public function index()
         {
@@ -32,10 +32,13 @@ use Illuminate\Http\Request;
 
                 foreach($users as $user) {
                     $response['users'][] = ['id' => $user->id, 'name' => $user->name, 'email' => $user->email,
-                                            'password' => $user->password, 'created_at' => $user->created_at,];
+                                            'password' => $user->password, 'about' => $user->about,
+                                            'perm_level' => $user->perm_level, 'avatar_url' => $user->avatar_url,
+                                            'created_at' => $user->created_at,];
                 }
             } catch(\Exception $e) {
                 \Log::info($e);
+
                 $statusCode = 404;
             } finally {
                 return Response::json($response, $statusCode);
@@ -49,12 +52,12 @@ use Illuminate\Http\Request;
             $createUser = new User;
             $response = ['user' => []];
 
-//            try {
-//                $validateData = $this->_validation->validate($input);
-//            } catch(ValidationException $e) {
-//                $errors['error'] = $e->get_errors();
-//                return Response::json($errors, 422);
-//            }
+            try {
+                $validateData = $this->_validation->validate($input);
+            } catch(ValidationException $e) {
+                $errors['error'] = $e->get_errors();
+                return Response::json($errors, 422);
+            }
 
 
             $input['password'] = Hash::make($input['password']);
@@ -87,6 +90,7 @@ use Illuminate\Http\Request;
                     'password'      => $user->password,
                     'about'         => $user->about,
                     'perm_level'    => $user->perm_level,
+                    'avatar_url'    => $user->avatar_url,
                     'created_at'    => $user->created_at
                 ];
 
@@ -103,16 +107,18 @@ use Illuminate\Http\Request;
 
         public $restful = true;
 
-        public function update(Request $request, $id)
+        public function update(Request $request, $model)
         {
             $input = ($request->input()['user']);
             //validate the user input
 
-            if($input['password'])
-                $input['password'] = Hash::make($input['password']);
-            else {
-                $input['password'] = User::find($id)->password;
-            }
+            //CHANGES PASSWORD ON ANY UPDATE?
+
+//            if($input['password'])
+//                $input['password'] = Hash::make($input['password']);
+//            else {
+//                $input['password'] = $model->password;
+//            }
 
             try {
                 $validateData = $this->_validation->validate($input);
@@ -121,8 +127,8 @@ use Illuminate\Http\Request;
             return Response::json($errors, 422);
         }
 
-            User::find($id)->update($input);
-            $response['user'][] = User::find($id);
+            $model->update($input);
+            $response['user'][] = $model;
             return $response;
         }
 

@@ -1,5 +1,32 @@
 var moment = require('moment');
 
+Ember.WYSIWYG = Ember.TextArea.extend({
+
+    renderEditor: function() {
+        var _this = this;
+
+        _this.$().trumbowyg({
+            id: 'ember-wysiwyg',
+            btns: ['viewHTML',
+                '|', 'formatting',
+                '|', 'btnGrp-design',
+                '|', 'link',
+                '|', 'btnGrp-justify',
+                '|', 'btnGrp-lists',
+                '|', 'horizontalRule']
+        }).on('tbwblur tbwpaste tbwfocus tbwchange', function() {
+            setTimeout(function() {
+                if(_this.$()) {
+                    _this.set('value', _this.$().trumbowyg('html'));
+                }
+            }, 100);
+        });
+
+    }.on('didInsertElement')
+
+});
+
+
 Ember.Handlebars.helper('format-text', function(text) {
     text = Ember.Handlebars.Utils.escapeExpression(text);
     text = text.replace(/(\r\n|\n|\r)/gm, '<br>');

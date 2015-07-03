@@ -31,7 +31,7 @@ App.RegisterpageController = Ember.Controller.extend({
             model.save().then( function () {
                 this.transitionToRoute('loginpage');
                 this.send('pushNotification', 'Successfully Registered', false);
-                this.send('refreshModel');
+                //this.send('refreshModel');
             }.bind(this), function(response) {
                 this.send( 'pushNotification',
                     'FAILED', true );

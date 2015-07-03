@@ -17,12 +17,9 @@
     Route::post('login', 'Auth\AuthController@authenticate');
     Route::post('logout', 'Auth\AuthController@logout');
 
-    Route::get('/{data?}', function () {
-        return View::make('ember');
-    });
-
-    Route::get('/admin/{data?}', function() {
-        return View::make('ember');
+    Route::get('{data?}', function () {
+        $rootURL = 'WestCoastWebsite/public/';//Config::get('app.url');//URL::route('DegenerationWebsite/public', '{data?}', false);
+        return View::make('ember')->with('rootURL', $rootURL);
     });
 
 
