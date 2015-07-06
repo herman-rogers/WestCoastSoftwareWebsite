@@ -8,122 +8,132 @@
   <div class="container">
 
       {{!#if isLoggedIn}}
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>My Profile</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="col-lg-12 navbar">
-              <div class="menu-navbar-container">
-                <ul class="nav navbar-nav">
-                    {{#if $isEditing}}
-                      <button class="btn" type="submit" {{action 'applyChanges'}}>Apply Changes</button>
-                      <button class="btn" type="submit" {{action 'edit'}}>Cancel Changes</button>
-                    {{else}}
-                      <button class="btn" type="submit" {{action 'edit'}}>Edit</button>
-                    {{/if}}
-                </ul>
-              </div>
-              <!--Insert links to other pages such as settings etc. Also an 'edit' button
-              to toggle edit on or off (possibly new page altogether?)-->
-            </div>
-
-            <div class="container">
-              <div class="container pull-left" style="padding: 10px 20px 10px 20px; width: auto; float:left">
-
-                <div class="box" style="max-width: 100%; max-height: 100%;
-             height: 300px; width: 300px; padding: 0; border: solid">
-                  <div class="box" style="width: auto; height: auto; margin: auto; padding: 0">
-                    AVATAR
-                  </div>
-                </div>
-                  {{#if $isEditing}}
-                    <button class="btn" type="submit" {{action 'upload'}}>UploadImage</button>
-                  {{/if}}
-              </div>
-              <div class="container pull-left" style="padding: 10px 20px 10px 20px; margin: auto; max-width: 50%;
-          width: auto;">
-                <p style="text-align: left; float: left;margin: auto; display: inline-block; padding-top: 10px">
-                    {{!#if $isEditName}}
-                    {{#if $isEditing}}
-                      <!--DISPLAY THE TEXTAREA TO EDIT THE NAME-->
-                        {{textarea id="name" name="name" placeholder=newName value=model.name cols="20" rows="1"}}
-                    {{!/if}}
-                    {{else}}
-                        {{content.name}}
-
-                    {{/if}}
-                </p>
-                  {{!#if $isEditing}}
-                <!--<div class="container" style="display:inline-block; max-width: 50%">-->
-                <!--{{!#if $isEditName}}-->
-                <!--&lt;!&ndash;<button class="btn" style="padding-left: 0" type="submit" {{!action 'cancelNameChanges'}}>Cancel</button>&ndash;&gt;-->
-                <!--&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;-->
-                <!--{{!else}}-->
-                <!--&lt;!&ndash;<button class="btn" style="padding-left: 0" type="submit" {{!action 'editName'}}>Edit Name</button>&ndash;&gt;-->
-
-                <!--{{!/if}}-->
-                <!--</div>-->
-                  {{!/if}}
-                <br><br>
-
-                <p style="text-align: left; float: left;margin: auto; display: inline-block;">
-                    {{!#if $isEditEmail}}
-                    {{#if $isEditing}}
-                      <!--DISPLAY THE TEXTAREA TO EDIT THE NAME-->
-                        {{textarea id="email" name="email" placeholder=model.email value=model.email cols="20" rows="1"}}
-                    {{else}}
-                        {{content.email}}
-                    {{/if}}
-                    {{!/if}}
-                </p>
-                <!--{{!#if $isEditing}}-->
-                <!--<div class="container" style="display:inline-block; max-width: 50%">-->
-                <!--{{!#if $isEditEmail}}-->
-                <!--<button class="btn" style="padding-left: 0" type="submit" {{!action 'cancelEmailChanges'}}>Cancel</button>-->
-                <!--&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;-->
-                <!--{{!else}}-->
-                <!--<button class="btn" style="padding-left: 0" type="submit" {{!action 'editEmail'}}>Edit Email</button>-->
-
-                <!--{{!/if}}-->
-                <!--</div>-->
-                <!--{{!/if}}-->
-              </div>
-              <br><br><br><br><br><br><br><br>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>My Profile</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-lg-12 navbar">
+          <div class="menu-navbar-container">
+            <ul class="nav navbar-nav">
                 {{#if $isEditing}}
-
-                  <br>
-                  <br>
+                  <button class="btn" type="submit" {{action 'applyChanges'}}>Apply Changes</button>
+                  <button class="btn" type="submit" {{action 'edit'}}>Cancel Changes</button>
+                {{else}}
+                  <button class="btn" type="submit" {{action 'edit'}}>Edit</button>
                 {{/if}}
-              <div class="container pull-left"
-                   style="margin: auto; width: auto; height: auto; text-align: center; padding:  10px 20px 10px 25px;">
-                <div class="box" style="margin: auto; padding: 0px">
-                  <p>
-                    About Me:
-                  </p>
+            </ul>
+          </div>
+          <!--Insert links to other pages such as settings etc. Also an 'edit' button
+          to toggle edit on or off (possibly new page altogether?)-->
+        </div>
 
-                  <p>
-                      {{content.about}}
-                    <!--DISPLAY THE WYSIWYG EDITOR TO EDIT THE ABOUT SECTION-->
-                  </p>
-                </div>
+        <div class="container">
+          <div class="container pull-left" style="padding: 10px 20px 10px 20px; width: auto; float:left">
+
+            <div class="box" style="max-width: 100%; max-height: 100%;
+             height: 300px; width: 300px; padding: 0; border: solid">
+              <div class="box" style="width: auto; height: auto; margin: auto; padding: 0">
+                AVATAR
               </div>
             </div>
+              {{#if $isEditing}}
+                  <!--{{!file-uploader uploadedFile=content.avatar url=uploadUrl}}-->
+                <button class="btn" type="submit" {{action 'upload'}}>UploadImage</button>
+              {{/if}}
+          </div>
+          <div class="container pull-left" style="padding: 10px 20px 10px 20px; margin: auto; max-width: 50%;
+          width: auto;">
+            <p style="text-align: left; float: left;margin: auto; display: inline-block; padding-top: 10px">
+                {{!#if $isEditName}}
+                {{#if $isEditing}}
+                  <!--DISPLAY THE TEXTAREA TO EDIT THE NAME-->
+                    {{textarea id="name" name="name" placeholder=newName value=model.name cols="20" rows="1"}}
+                {{!/if}}
+                {{else}}
+                    {{content.name}}
 
-            <div class="container">
-                {{#if isAdmin}}
-                  <br><br><br><br><br>
-
-                  <p>
-                    YOU ARE AN ADMIN!
-                  </p>
-                  <!--Display Admin stuff (different options to standard users-->
                 {{/if}}
+            </p>
+              {{!#if $isEditing}}
+            <!--<div class="container" style="display:inline-block; max-width: 50%">-->
+            <!--{{!#if $isEditName}}-->
+            <!--&lt;!&ndash;<button class="btn" style="padding-left: 0" type="submit" {{!action 'cancelNameChanges'}}>Cancel</button>&ndash;&gt;-->
+            <!--&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;-->
+            <!--{{!else}}-->
+            <!--&lt;!&ndash;<button class="btn" style="padding-left: 0" type="submit" {{!action 'editName'}}>Edit Name</button>&ndash;&gt;-->
+
+            <!--{{!/if}}-->
+            <!--</div>-->
+              {{!/if}}
+            <br><br>
+
+            <p style="text-align: left; float: left;margin: auto; display: inline-block;">
+                {{!#if $isEditEmail}}
+                {{#if $isEditing}}
+                  <!--DISPLAY THE TEXTAREA TO EDIT THE NAME-->
+                    {{textarea id="email" name="email" placeholder=model.email value=model.email cols="20" rows="1"}}
+                {{else}}
+                    {{content.email}}
+                {{/if}}
+                {{!/if}}
+            </p>
+            <!--{{!#if $isEditing}}-->
+            <!--<div class="container" style="display:inline-block; max-width: 50%">-->
+            <!--{{!#if $isEditEmail}}-->
+            <!--<button class="btn" style="padding-left: 0" type="submit" {{!action 'cancelEmailChanges'}}>Cancel</button>-->
+            <!--&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;-->
+            <!--{{!else}}-->
+            <!--<button class="btn" style="padding-left: 0" type="submit" {{!action 'editEmail'}}>Edit Email</button>-->
+
+            <!--{{!/if}}-->
+            <!--</div>-->
+            <!--{{!/if}}-->
+          </div>
+          <br><br><br><br><br><br><br><br>
+            {{#if $isEditing}}
+
+              <br>
+              <br>
+            {{/if}}
+          <div class="container pull-left"
+               style="margin: auto; width: auto; height: auto; text-align: center; padding:  10px 20px 10px 25px;">
+            <div class="box" style="margin: auto; padding: 0px">
+              <p>
+                About Me:
+              </p>
+
+              <!--<p>-->
+
+                  {{#if $isEditing}}
+                      {{model.about}}
+                  <hr>
+                    <br>
+                      {{text-editor class="form-control" value=model.about}}
+                  {{else}}
+                      {{model.about}}
+
+                  {{/if}}
+                <!--DISPLAY THE WYSIWYG EDITOR TO EDIT THE ABOUT SECTION-->
+              <!--</p>-->
             </div>
           </div>
         </div>
+
+        <div class="container">
+            {{#if isAdmin}}
+              <br><br><br><br><br>
+
+              <p>
+                YOU ARE AN ADMIN!
+              </p>
+              <!--Display Admin stuff (different options to standard users-->
+            {{/if}}
+        </div>
+      </div>
+    </div>
       {{!/if}}
   </div>
   <br>

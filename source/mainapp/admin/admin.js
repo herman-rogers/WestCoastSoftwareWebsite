@@ -45,6 +45,10 @@ App.AdminController = Ember.Controller.extend({
     application: Ember.computed.alias("controllers.application"),
 
 
+    //uploadUrl: function(){
+    //    return this.get('application').getRequestPath('logout');
+    //}.property(),
+
     isAdmin: function() {
         //var permlevel = this.get('content.perm_level')==1;
         //console.log(permlevel);
@@ -98,7 +102,7 @@ App.AdminController = Ember.Controller.extend({
 
         applyChanges: function() {
             //Check to see if the model has any unsaved changes. Returns true if so.
-           if(this.get('model.isDirty')) {
+           //if(this.get('model.isDirty')) {
                 this.get('model').save().then(function() {
                     this.send('refreshModel');
                     window.scrollTo(0,0);
@@ -111,7 +115,7 @@ App.AdminController = Ember.Controller.extend({
                                 errors, false);
                     this.get('model').rollback();
                 }.bind(this));
-           }
+           //}
             this.send('edit');
         }
 

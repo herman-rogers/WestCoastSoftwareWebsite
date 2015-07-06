@@ -49,8 +49,6 @@ use Illuminate\Http\Request;
         public function store(Request $request)
         {
             $input = $request->input('user');
-            $createUser = new User;
-            $response = ['user' => []];
 
             try {
                 $validateData = $this->_validation->validate($input);
@@ -59,6 +57,8 @@ use Illuminate\Http\Request;
                 return Response::json($errors, 422);
             }
 
+            $createUser = new User;
+            $response = ['user' => []];
 
             $input['password'] = Hash::make($input['password']);
 
@@ -114,18 +114,18 @@ use Illuminate\Http\Request;
 
             //CHANGES PASSWORD ON ANY UPDATE?
 
-//            if($input['password'])
-//                $input['password'] = Hash::make($input['password']);
-//            else {
-//                $input['password'] = $model->password;
-//            }
+            //            if($input['password'])
+            //                $input['password'] = Hash::make($input['password']);
+            //            else {
+            //                $input['password'] = $model->password;
+            //            }
 
             try {
                 $validateData = $this->_validation->validate($input);
-            } catch (ValidationException $e) {
-            $errors ['errors'] = $e->get_errors();
-            return Response::json($errors, 422);
-        }
+            } catch(ValidationException $e) {
+                $errors ['errors'] = $e->get_errors();
+                return Response::json($errors, 422);
+            }
 
             $model->update($input);
             $response['user'][] = $model;

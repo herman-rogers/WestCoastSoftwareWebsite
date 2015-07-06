@@ -11,6 +11,5 @@
             'email' => array('required', 'E-Mail'),
             'password' => array('required'),
             'perm_level' => array('required', 'integer'),
-            'colour_code' => array('required', 'hexcolour'),
         );
     }

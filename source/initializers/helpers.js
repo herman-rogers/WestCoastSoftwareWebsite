@@ -7,6 +7,7 @@ Ember.WYSIWYG = Ember.TextArea.extend({
 
         _this.$().trumbowyg({
             id: 'ember-wysiwyg',
+            fullscreenable: false,
             btns: ['viewHTML',
                 '|', 'formatting',
                 '|', 'btnGrp-design',
@@ -14,7 +15,7 @@ Ember.WYSIWYG = Ember.TextArea.extend({
                 '|', 'btnGrp-justify',
                 '|', 'btnGrp-lists',
                 '|', 'horizontalRule']
-        }).on('tbwblur tbwpaste tbwfocus tbwchange', function() {
+        }).on('tbwblur tbwpaste tbwfocus tbwchange ', function() {
             setTimeout(function() {
                 if(_this.$()) {
                     _this.set('value', _this.$().trumbowyg('html'));
@@ -26,6 +27,8 @@ Ember.WYSIWYG = Ember.TextArea.extend({
 
 });
 
+
+Ember.Handlebars.helper('text-editor', Ember.WYSIWYG);
 
 Ember.Handlebars.helper('format-text', function(text) {
     text = Ember.Handlebars.Utils.escapeExpression(text);

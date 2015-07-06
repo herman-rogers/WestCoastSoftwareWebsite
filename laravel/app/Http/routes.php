@@ -13,6 +13,7 @@
 
 
     Route::model('users', 'App\User');
+    Route::model('posts', 'App\Post');
 
     Route::post('login', 'Auth\AuthController@authenticate');
     Route::post('logout', 'Auth\AuthController@logout');
@@ -26,4 +27,5 @@
     Route::group(array('prefix' => 'api'), function() {
         //Model Resources
         Route::resource( 'users', 'UserController');
+        Route::resource('posts', 'PostController');
     });

@@ -11,4 +11,5 @@ App.Router.map(function() {
     this.resource('registerpage');
 
     this.resource('users', {path: '/users/:user_id'});
+
 });

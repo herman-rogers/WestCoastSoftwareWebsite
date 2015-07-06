@@ -7,6 +7,7 @@ gulp.task( 'libraries', function() {
         .pipe( addsrc.append( 'bower_components/jquery-cookie/jquery.cookie.js' ) )
         .pipe( addsrc.append( 'bower_components/ember/ember.debug.js' ) )
         .pipe( addsrc.append( 'bower_components/ember-data/ember-data.min.js' ) )
+        .pipe( addsrc.append( 'bower_components/ember-uploader/dist/ember-uploader.min.js' ) )
         .pipe( addsrc.append( 'bower_components/bootstrap/dist/js/bootstrap.min.js' ) )
         .pipe( addsrc.append( 'bower_components/trumbowyg/dist/trumbowyg.min.js' ) )
         .pipe( concat( 'libraries.js' ) )

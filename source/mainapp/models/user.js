@@ -6,6 +6,7 @@ App.User = DS.Model.extend( {
     about: DS.attr('string'),
     perm_level: DS.attr('number', {defaultValue: 0}),
     avatar_url: DS.attr('string'),
+    postCount: DS.attr('number', {defaultValue: 0}),
     created_at: DS.attr()
 
 } );

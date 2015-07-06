@@ -746,11 +746,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
           "source": null,
           "start": {
             "line": 21,
-            "column": 20
+            "column": 16
           },
           "end": {
             "line": 24,
-            "column": 20
+            "column": 16
           }
         }
       },
@@ -759,7 +759,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                      ");
+        var el1 = dom.createTextNode("                  ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("button");
         dom.setAttribute(el1,"class","btn");
@@ -767,7 +767,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         var el2 = dom.createTextNode("Apply Changes");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n                      ");
+        var el1 = dom.createTextNode("\n                  ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("button");
         dom.setAttribute(el1,"class","btn");
@@ -803,11 +803,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
           "source": null,
           "start": {
             "line": 24,
-            "column": 20
+            "column": 16
           },
           "end": {
             "line": 26,
-            "column": 20
+            "column": 16
           }
         }
       },
@@ -816,7 +816,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                      ");
+        var el1 = dom.createTextNode("                  ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("button");
         dom.setAttribute(el1,"class","btn");
@@ -849,11 +849,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
           "source": null,
           "start": {
             "line": 42,
-            "column": 18
+            "column": 14
           },
           "end": {
-            "line": 44,
-            "column": 18
+            "line": 45,
+            "column": 14
           }
         }
       },
@@ -862,7 +862,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                    ");
+        var el1 = dom.createTextNode("                  ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n                ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("button");
         dom.setAttribute(el1,"class","btn");
@@ -875,7 +879,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element0 = dom.childAt(fragment, [1]);
+        var element0 = dom.childAt(fragment, [3]);
         var morphs = new Array(1);
         morphs[0] = dom.createElementMorph(element0);
         return morphs;
@@ -894,12 +898,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 50,
-            "column": 20
+            "line": 51,
+            "column": 16
           },
           "end": {
-            "line": 54,
-            "column": 20
+            "line": 55,
+            "column": 16
           }
         }
       },
@@ -908,11 +912,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                      ");
+        var el1 = dom.createTextNode("                  ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("DISPLAY THE TEXTAREA TO EDIT THE NAME");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n                        ");
+        var el1 = dom.createTextNode("\n                    ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
@@ -939,12 +943,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 54,
-            "column": 20
+            "line": 55,
+            "column": 16
           },
           "end": {
-            "line": 57,
-            "column": 20
+            "line": 58,
+            "column": 16
           }
         }
       },
@@ -953,7 +957,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                        ");
+        var el1 = dom.createTextNode("                    ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
@@ -980,12 +984,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 74,
-            "column": 20
+            "line": 75,
+            "column": 16
           },
           "end": {
-            "line": 77,
-            "column": 20
+            "line": 78,
+            "column": 16
           }
         }
       },
@@ -994,11 +998,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                      ");
+        var el1 = dom.createTextNode("                  ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("DISPLAY THE TEXTAREA TO EDIT THE NAME");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n                        ");
+        var el1 = dom.createTextNode("\n                    ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
@@ -1025,12 +1029,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 77,
-            "column": 20
+            "line": 78,
+            "column": 16
           },
           "end": {
-            "line": 79,
-            "column": 20
+            "line": 80,
+            "column": 16
           }
         }
       },
@@ -1039,7 +1043,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                        ");
+        var el1 = dom.createTextNode("                    ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
@@ -1066,12 +1070,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 95,
-            "column": 16
+            "line": 96,
+            "column": 12
           },
           "end": {
-            "line": 99,
-            "column": 16
+            "line": 100,
+            "column": 12
           }
         }
       },
@@ -1080,11 +1084,11 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("\n                  ");
+        var el1 = dom.createTextNode("\n              ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("br");
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n                  ");
+        var el1 = dom.createTextNode("\n              ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("br");
         dom.appendChild(el0, el1);
@@ -1107,12 +1111,12 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 116,
-            "column": 16
+            "line": 110,
+            "column": 18
           },
           "end": {
-            "line": 123,
-            "column": 16
+            "line": 115,
+            "column": 18
           }
         }
       },
@@ -1121,25 +1125,121 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("                  ");
+        var el1 = dom.createTextNode("                      ");
         dom.appendChild(el0, el1);
-        var el1 = dom.createElement("br");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("br");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("br");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("br");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("br");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n\n                  ");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("p");
-        var el2 = dom.createTextNode("\n                    YOU ARE AN ADMIN!\n                  ");
-        dom.appendChild(el1, el2);
+        var el1 = dom.createComment("");
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n                  ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("hr");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n                    ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n                      ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(2);
+        morphs[0] = dom.createMorphAt(fragment,1,1,contextualElement);
+        morphs[1] = dom.createMorphAt(fragment,7,7,contextualElement);
+        return morphs;
+      },
+      statements: [
+        ["content","model.about"],
+        ["inline","text-editor",[],["class","form-control","value",["subexpr","@mut",[["get","model.about"]],[]]]]
+      ],
+      locals: [],
+      templates: []
+    };
+  }());
+  var child9 = (function() {
+    return {
+      meta: {
+        "revision": "Ember@1.13.2",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 115,
+            "column": 18
+          },
+          "end": {
+            "line": 118,
+            "column": 18
+          }
+        }
+      },
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("                      ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(1);
+        morphs[0] = dom.createMorphAt(fragment,1,1,contextualElement);
+        return morphs;
+      },
+      statements: [
+        ["content","model.about"]
+      ],
+      locals: [],
+      templates: []
+    };
+  }());
+  var child10 = (function() {
+    return {
+      meta: {
+        "revision": "Ember@1.13.2",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 126,
+            "column": 12
+          },
+          "end": {
+            "line": 133,
+            "column": 12
+          }
+        }
+      },
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("              ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("br");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n\n              ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("p");
+        var el2 = dom.createTextNode("\n                YOU ARE AN ADMIN!\n              ");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n              ");
         dom.appendChild(el0, el1);
         var el1 = dom.createComment("Display Admin stuff (different options to standard users");
         dom.appendChild(el0, el1);
@@ -1165,7 +1265,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 132,
+          "line": 142,
           "column": 10
         }
       }
@@ -1205,43 +1305,43 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el1, el2);
       var el2 = dom.createElement("div");
       dom.setAttribute(el2,"class","container");
-      var el3 = dom.createTextNode("\n\n        ");
+      var el3 = dom.createTextNode("\n\n    ");
       dom.appendChild(el2, el3);
       var el3 = dom.createElement("div");
       dom.setAttribute(el3,"class","row");
-      var el4 = dom.createTextNode("\n          ");
+      var el4 = dom.createTextNode("\n      ");
       dom.appendChild(el3, el4);
       var el4 = dom.createElement("div");
       dom.setAttribute(el4,"class","col-lg-12");
-      var el5 = dom.createTextNode("\n            ");
+      var el5 = dom.createTextNode("\n        ");
       dom.appendChild(el4, el5);
       var el5 = dom.createElement("h1");
       var el6 = dom.createTextNode("My Profile");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n          ");
+      var el5 = dom.createTextNode("\n      ");
       dom.appendChild(el4, el5);
       dom.appendChild(el3, el4);
-      var el4 = dom.createTextNode("\n        ");
+      var el4 = dom.createTextNode("\n    ");
       dom.appendChild(el3, el4);
       dom.appendChild(el2, el3);
-      var el3 = dom.createTextNode("\n        ");
+      var el3 = dom.createTextNode("\n    ");
       dom.appendChild(el2, el3);
       var el3 = dom.createElement("div");
       dom.setAttribute(el3,"class","row");
-      var el4 = dom.createTextNode("\n          ");
+      var el4 = dom.createTextNode("\n      ");
       dom.appendChild(el3, el4);
       var el4 = dom.createElement("div");
       dom.setAttribute(el4,"class","col-lg-12");
-      var el5 = dom.createTextNode("\n            ");
+      var el5 = dom.createTextNode("\n        ");
       dom.appendChild(el4, el5);
       var el5 = dom.createElement("div");
       dom.setAttribute(el5,"class","col-lg-12 navbar");
-      var el6 = dom.createTextNode("\n              ");
+      var el6 = dom.createTextNode("\n          ");
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("div");
       dom.setAttribute(el6,"class","menu-navbar-container");
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("ul");
       dom.setAttribute(el7,"class","nav navbar-nav");
@@ -1249,57 +1349,57 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el7, el8);
       var el8 = dom.createComment("");
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("                ");
+      var el8 = dom.createTextNode("            ");
       dom.appendChild(el7, el8);
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n              ");
+      var el7 = dom.createTextNode("\n          ");
       dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("\n              ");
+      var el6 = dom.createTextNode("\n          ");
       dom.appendChild(el5, el6);
-      var el6 = dom.createComment("Insert links to other pages such as settings etc. Also an 'edit' button\n              to toggle edit on or off (possibly new page altogether?)");
+      var el6 = dom.createComment("Insert links to other pages such as settings etc. Also an 'edit' button\n          to toggle edit on or off (possibly new page altogether?)");
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("\n            ");
+      var el6 = dom.createTextNode("\n        ");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n\n            ");
+      var el5 = dom.createTextNode("\n\n        ");
       dom.appendChild(el4, el5);
       var el5 = dom.createElement("div");
       dom.setAttribute(el5,"class","container");
-      var el6 = dom.createTextNode("\n              ");
+      var el6 = dom.createTextNode("\n          ");
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("div");
       dom.setAttribute(el6,"class","container pull-left");
       dom.setAttribute(el6,"style","padding: 10px 20px 10px 20px; width: auto; float:left");
-      var el7 = dom.createTextNode("\n\n                ");
+      var el7 = dom.createTextNode("\n\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("div");
       dom.setAttribute(el7,"class","box");
       dom.setAttribute(el7,"style","max-width: 100%; max-height: 100%;\n             height: 300px; width: 300px; padding: 0; border: solid");
-      var el8 = dom.createTextNode("\n                  ");
+      var el8 = dom.createTextNode("\n              ");
       dom.appendChild(el7, el8);
       var el8 = dom.createElement("div");
       dom.setAttribute(el8,"class","box");
       dom.setAttribute(el8,"style","width: auto; height: auto; margin: auto; padding: 0");
-      var el9 = dom.createTextNode("\n                    AVATAR\n                  ");
+      var el9 = dom.createTextNode("\n                AVATAR\n              ");
       dom.appendChild(el8, el9);
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("\n                ");
+      var el8 = dom.createTextNode("\n            ");
       dom.appendChild(el7, el8);
       dom.appendChild(el6, el7);
       var el7 = dom.createTextNode("\n");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("              ");
+      var el7 = dom.createTextNode("          ");
       dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("\n              ");
+      var el6 = dom.createTextNode("\n          ");
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("div");
       dom.setAttribute(el6,"class","container pull-left");
       dom.setAttribute(el6,"style","padding: 10px 20px 10px 20px; margin: auto; max-width: 50%;\n          width: auto;");
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("p");
       dom.setAttribute(el7,"style","text-align: left; float: left;margin: auto; display: inline-block; padding-top: 10px");
@@ -1307,48 +1407,48 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el7, el8);
       var el8 = dom.createComment("");
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("                ");
+      var el8 = dom.createTextNode("            ");
       dom.appendChild(el7, el8);
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("<div class=\"container\" style=\"display:inline-block; max-width: 50%\">");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("&lt;!&ndash;<button class=\"btn\" style=\"padding-left: 0\" type=\"submit\" >Cancel</button>&ndash;&gt;");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("&lt;!&ndash;<button class=\"btn\" style=\"padding-left: 0\" type=\"submit\" >Edit Name</button>&ndash;&gt;");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n\n                ");
+      var el7 = dom.createTextNode("\n\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("</div>");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("br");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("br");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n\n                ");
+      var el7 = dom.createTextNode("\n\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("p");
       dom.setAttribute(el7,"style","text-align: left; float: left;margin: auto; display: inline-block;");
@@ -1356,53 +1456,53 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el7, el8);
       var el8 = dom.createComment("");
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("                ");
+      var el8 = dom.createTextNode("            ");
       dom.appendChild(el7, el8);
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("<div class=\"container\" style=\"display:inline-block; max-width: 50%\">");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("<button class=\"btn\" style=\"padding-left: 0\" type=\"submit\" >Cancel</button>");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("&lt;!&ndash;ACCEPT OR REJECT CHANGES BUTTONS&ndash;&gt;");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("<button class=\"btn\" style=\"padding-left: 0\" type=\"submit\" >Edit Email</button>");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n\n                ");
+      var el7 = dom.createTextNode("\n\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("</div>");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createComment("");
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n              ");
+      var el7 = dom.createTextNode("\n          ");
       dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("\n              ");
+      var el6 = dom.createTextNode("\n          ");
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("br");
       dom.appendChild(el5, el6);
@@ -1424,46 +1524,48 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createComment("");
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("              ");
+      var el6 = dom.createTextNode("          ");
       dom.appendChild(el5, el6);
       var el6 = dom.createElement("div");
       dom.setAttribute(el6,"class","container pull-left");
       dom.setAttribute(el6,"style","margin: auto; width: auto; height: auto; text-align: center; padding:  10px 20px 10px 25px;");
-      var el7 = dom.createTextNode("\n                ");
+      var el7 = dom.createTextNode("\n            ");
       dom.appendChild(el6, el7);
       var el7 = dom.createElement("div");
       dom.setAttribute(el7,"class","box");
       dom.setAttribute(el7,"style","margin: auto; padding: 0px");
-      var el8 = dom.createTextNode("\n                  ");
+      var el8 = dom.createTextNode("\n              ");
       dom.appendChild(el7, el8);
       var el8 = dom.createElement("p");
-      var el9 = dom.createTextNode("\n                    About Me:\n                  ");
+      var el9 = dom.createTextNode("\n                About Me:\n              ");
       dom.appendChild(el8, el9);
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("\n\n                  ");
+      var el8 = dom.createTextNode("\n\n              ");
       dom.appendChild(el7, el8);
-      var el8 = dom.createElement("p");
-      var el9 = dom.createTextNode("\n                      ");
-      dom.appendChild(el8, el9);
-      var el9 = dom.createComment("");
-      dom.appendChild(el8, el9);
-      var el9 = dom.createTextNode("\n                    ");
-      dom.appendChild(el8, el9);
-      var el9 = dom.createComment("DISPLAY THE WYSIWYG EDITOR TO EDIT THE ABOUT SECTION");
-      dom.appendChild(el8, el9);
-      var el9 = dom.createTextNode("\n                  ");
-      dom.appendChild(el8, el9);
+      var el8 = dom.createComment("<p>");
       dom.appendChild(el7, el8);
-      var el8 = dom.createTextNode("\n                ");
+      var el8 = dom.createTextNode("\n\n");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createComment("");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createTextNode("                ");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createComment("DISPLAY THE WYSIWYG EDITOR TO EDIT THE ABOUT SECTION");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createTextNode("\n              ");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createComment("</p>");
+      dom.appendChild(el7, el8);
+      var el8 = dom.createTextNode("\n            ");
       dom.appendChild(el7, el8);
       dom.appendChild(el6, el7);
-      var el7 = dom.createTextNode("\n              ");
+      var el7 = dom.createTextNode("\n          ");
       dom.appendChild(el6, el7);
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("\n            ");
+      var el6 = dom.createTextNode("\n        ");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n\n            ");
+      var el5 = dom.createTextNode("\n\n        ");
       dom.appendChild(el4, el5);
       var el5 = dom.createElement("div");
       dom.setAttribute(el5,"class","container");
@@ -1471,13 +1573,13 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       dom.appendChild(el5, el6);
       var el6 = dom.createComment("");
       dom.appendChild(el5, el6);
-      var el6 = dom.createTextNode("            ");
+      var el6 = dom.createTextNode("        ");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n          ");
+      var el5 = dom.createTextNode("\n      ");
       dom.appendChild(el4, el5);
       dom.appendChild(el3, el4);
-      var el4 = dom.createTextNode("\n        ");
+      var el4 = dom.createTextNode("\n    ");
       dom.appendChild(el3, el4);
       dom.appendChild(el2, el3);
       var el3 = dom.createTextNode("\n  ");
@@ -1514,7 +1616,7 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       morphs[5] = dom.createMorphAt(dom.childAt(element9, [1]),1,1);
       morphs[6] = dom.createMorphAt(dom.childAt(element9, [22]),1,1);
       morphs[7] = dom.createMorphAt(element8,14,14);
-      morphs[8] = dom.createMorphAt(dom.childAt(element8, [16, 1, 3]),1,1);
+      morphs[8] = dom.createMorphAt(dom.childAt(element8, [16, 1]),5,5);
       morphs[9] = dom.createMorphAt(dom.childAt(element7, [5]),1,1);
       return morphs;
     },
@@ -1527,14 +1629,408 @@ Ember.TEMPLATES['admin'] =  Ember.HTMLBars.template((function() {
       ["block","if",[["get","$isEditing"]],[],3,4],
       ["block","if",[["get","$isEditing"]],[],5,6],
       ["block","if",[["get","$isEditing"]],[],7,null],
-      ["content","content.about"],
-      ["block","if",[["get","isAdmin"]],[],8,null]
+      ["block","if",[["get","$isEditing"]],[],8,9],
+      ["block","if",[["get","isAdmin"]],[],10,null]
     ],
     locals: [],
-    templates: [child0, child1, child2, child3, child4, child5, child6, child7, child8]
+    templates: [child0, child1, child2, child3, child4, child5, child6, child7, child8, child9, child10]
   };
 }()));
 Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
+  var child0 = (function() {
+    var child0 = (function() {
+      return {
+        meta: {
+          "revision": "Ember@1.13.2",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 19,
+              "column": 12
+            },
+            "end": {
+              "line": 34,
+              "column": 12
+            }
+          }
+        },
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("              ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createComment("<section class=\"tri-sec-one\">");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n              ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("div");
+          dom.setAttribute(el1,"class","bg-info");
+          var el2 = dom.createTextNode("\n                ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2,"class","box");
+          dom.setAttribute(el2,"style","background-color:#d9edf7; padding-top: 10px;");
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("h2");
+          var el4 = dom.createTextNode("POST\n                    TITLE:");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode(" ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createComment("");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("p");
+          var el4 = dom.createTextNode("POST\n                    BODY:");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode(" ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createComment("");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("br");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("button");
+          dom.setAttribute(el3,"class","btn");
+          dom.setAttribute(el3,"type","submit");
+          var el4 = dom.createTextNode("Save New Post");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("button");
+          dom.setAttribute(el3,"class","btn");
+          dom.setAttribute(el3,"type","submit");
+          var el4 = dom.createTextNode("Cancel New Post");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n\n                ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n              ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n              ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createComment("</section>");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element6 = dom.childAt(fragment, [3, 1]);
+          var element7 = dom.childAt(element6, [11]);
+          var element8 = dom.childAt(element6, [13]);
+          var morphs = new Array(4);
+          morphs[0] = dom.createMorphAt(element6,3,3);
+          morphs[1] = dom.createMorphAt(element6,7,7);
+          morphs[2] = dom.createElementMorph(element7);
+          morphs[3] = dom.createElementMorph(element8);
+          return morphs;
+        },
+        statements: [
+          ["inline","textarea",[],["id","title","name","title","placeholder","Title here","value",["subexpr","@mut",[["get","model.title"]],[]],"cols","20","rows","1"]],
+          ["inline","textarea",[],["id","postBody","name","postBody","placeholder","Insert Text","value",["subexpr","@mut",[["get","model.post_body"]],[]],"cols","60","rows","15"]],
+          ["element","action",["savePost"],[]],
+          ["element","action",["cancelPost"],[]]
+        ],
+        locals: [],
+        templates: []
+      };
+    }());
+    var child1 = (function() {
+      return {
+        meta: {
+          "revision": "Ember@1.13.2",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 34,
+              "column": 12
+            },
+            "end": {
+              "line": 37,
+              "column": 12
+            }
+          }
+        },
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("\n              ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("button");
+          dom.setAttribute(el1,"class","btn");
+          dom.setAttribute(el1,"type","submit");
+          var el2 = dom.createTextNode("Create New Post");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element5 = dom.childAt(fragment, [1]);
+          var morphs = new Array(1);
+          morphs[0] = dom.createElementMorph(element5);
+          return morphs;
+        },
+        statements: [
+          ["element","action",["newPost"],[]]
+        ],
+        locals: [],
+        templates: []
+      };
+    }());
+    return {
+      meta: {
+        "revision": "Ember@1.13.2",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 18,
+            "column": 8
+          },
+          "end": {
+            "line": 38,
+            "column": 8
+          }
+        }
+      },
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createComment("");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(1);
+        morphs[0] = dom.createMorphAt(fragment,0,0,contextualElement);
+        dom.insertBoundary(fragment, 0);
+        dom.insertBoundary(fragment, null);
+        return morphs;
+      },
+      statements: [
+        ["block","if",[["get","$isCreatingPost"]],[],0,1]
+      ],
+      locals: [],
+      templates: [child0, child1]
+    };
+  }());
+  var child1 = (function() {
+    var child0 = (function() {
+      return {
+        meta: {
+          "revision": "Ember@1.13.2",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 42,
+              "column": 14
+            },
+            "end": {
+              "line": 44,
+              "column": 14
+            }
+          }
+        },
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes() { return []; },
+        statements: [
+
+        ],
+        locals: [],
+        templates: []
+      };
+    }());
+    var child1 = (function() {
+      return {
+        meta: {
+          "revision": "Ember@1.13.2",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 44,
+              "column": 14
+            },
+            "end": {
+              "line": 63,
+              "column": 14
+            }
+          }
+        },
+        arity: 0,
+        cachedFragment: null,
+        hasRendered: false,
+        buildFragment: function buildFragment(dom) {
+          var el0 = dom.createDocumentFragment();
+          var el1 = dom.createTextNode("                ");
+          dom.appendChild(el0, el1);
+          var el1 = dom.createElement("section");
+          var el2 = dom.createTextNode("\n                  ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2,"class","bg-info");
+          var el3 = dom.createTextNode("\n                    ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("h2");
+          var el4 = dom.createComment("");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n\n                    ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("h4");
+          var el4 = dom.createComment("");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("\n                      ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createElement("small");
+          var el5 = dom.createTextNode("|");
+          dom.appendChild(el4, el5);
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode("   ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createComment("");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createTextNode(" ");
+          dom.appendChild(el3, el4);
+          var el4 = dom.createComment("");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n\n                  ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n                  ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("a");
+          dom.setAttribute(el2,"class","thumbnail");
+          var el3 = dom.createTextNode("\n                    ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("img");
+          dom.setAttribute(el3,"class","art-thumbnail");
+          dom.setAttribute(el3,"alt","");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n\n                  ");
+          dom.appendChild(el1, el2);
+          var el2 = dom.createElement("div");
+          dom.setAttribute(el2,"class","bg-info");
+          var el3 = dom.createTextNode("\n                    ");
+          dom.appendChild(el2, el3);
+          var el3 = dom.createElement("p");
+          var el4 = dom.createComment("");
+          dom.appendChild(el3, el4);
+          dom.appendChild(el2, el3);
+          var el3 = dom.createTextNode("\n                  ");
+          dom.appendChild(el2, el3);
+          dom.appendChild(el1, el2);
+          var el2 = dom.createTextNode("\n                ");
+          dom.appendChild(el1, el2);
+          dom.appendChild(el0, el1);
+          var el1 = dom.createTextNode("\n\n\n");
+          dom.appendChild(el0, el1);
+          return el0;
+        },
+        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+          var element0 = dom.childAt(fragment, [1]);
+          var element1 = dom.childAt(element0, [1]);
+          var element2 = dom.childAt(element1, [3]);
+          var element3 = dom.childAt(element0, [3]);
+          var element4 = dom.childAt(element3, [1]);
+          var morphs = new Array(7);
+          morphs[0] = dom.createMorphAt(dom.childAt(element1, [1]),0,0);
+          morphs[1] = dom.createMorphAt(element2,0,0);
+          morphs[2] = dom.createMorphAt(element2,4,4);
+          morphs[3] = dom.createMorphAt(element2,6,6);
+          morphs[4] = dom.createAttrMorph(element3, 'href');
+          morphs[5] = dom.createAttrMorph(element4, 'src');
+          morphs[6] = dom.createMorphAt(dom.childAt(element0, [5, 1]),0,0);
+          return morphs;
+        },
+        statements: [
+          ["content","post.title"],
+          ["content","post.author"],
+          ["inline","date-month",[["get","post.created_at"]],[]],
+          ["inline","date-year",[["get","post.created_at"]],[]],
+          ["attribute","href",["get","post.image_url"]],
+          ["attribute","src",["get","post.image_url"]],
+          ["inline","formatted-text",[["get","post.post_body"]],[]]
+        ],
+        locals: [],
+        templates: []
+      };
+    }());
+    return {
+      meta: {
+        "revision": "Ember@1.13.2",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 40,
+            "column": 8
+          },
+          "end": {
+            "line": 65,
+            "column": 8
+          }
+        }
+      },
+      arity: 1,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("          ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("section");
+        dom.setAttribute(el1,"class","tri-sec-one");
+        var el2 = dom.createTextNode("\n");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("          ");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var morphs = new Array(1);
+        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]),1,1);
+        return morphs;
+      },
+      statements: [
+        ["block","if",[["get","isEditing"]],[],0,1]
+      ],
+      locals: ["post"],
+      templates: [child0, child1]
+    };
+  }());
   return {
     meta: {
       "revision": "Ember@1.13.2",
@@ -1545,8 +2041,8 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 1,
-          "column": 9
+          "line": 78,
+          "column": 16
         }
       }
     },
@@ -1555,16 +2051,129 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
     hasRendered: false,
     buildFragment: function buildFragment(dom) {
       var el0 = dom.createDocumentFragment();
-      var el1 = dom.createTextNode("BLOG PAGE");
+      var el1 = dom.createElement("div");
+      var el2 = dom.createTextNode("\n    ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createComment("");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n    ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createComment("");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createElement("section");
+      dom.setAttribute(el1,"class","tri-sec-one");
+      dom.setAttribute(el1,"style","padding-top: 91px; background-color: transparent");
+      dom.setAttribute(el1,"id","top");
+      var el2 = dom.createTextNode("\n  ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("div");
+      dom.setAttribute(el2,"class","row");
+      var el3 = dom.createTextNode("\n    ");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createElement("div");
+      dom.setAttribute(el3,"class","container");
+      dom.setAttribute(el3,"style","max-width: 75%; margin: auto; background-color: white");
+      var el4 = dom.createTextNode("\n\n      ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("div");
+      dom.setAttribute(el4,"class","col-lg-12");
+      dom.setAttribute(el4,"style","background-color: white");
+      var el5 = dom.createTextNode("\n        ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createElement("h1");
+      var el6 = dom.createTextNode("Blog");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("\n\n        ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createElement("p");
+      var el6 = dom.createTextNode("\n          The latest from the team at West Coast Software.\n        ");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("\n\n      ");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createComment("");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createComment("");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("    ");
+      dom.appendChild(el3, el4);
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("\n      ");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createComment("");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("\n  ");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("<script>");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("$(document).ready(function () {");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("$(\".fancybox\").fancybox({");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("openEffect: \"none\",");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("closeEffect: \"none\"");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("});");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("});");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("</script>");
       dom.appendChild(el0, el1);
       return el0;
     },
-    buildRenderNodes: function buildRenderNodes() { return []; },
+    buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+      var element9 = dom.childAt(fragment, [0]);
+      var element10 = dom.childAt(fragment, [2, 1]);
+      var element11 = dom.childAt(element10, [1]);
+      var morphs = new Array(5);
+      morphs[0] = dom.createMorphAt(element9,1,1);
+      morphs[1] = dom.createMorphAt(element9,3,3);
+      morphs[2] = dom.createMorphAt(element11,3,3);
+      morphs[3] = dom.createMorphAt(element11,5,5);
+      morphs[4] = dom.createMorphAt(element10,3,3);
+      return morphs;
+    },
     statements: [
-
+      ["content","main-header"],
+      ["inline","notification-list",[],["notifications",["subexpr","@mut",[["get","application.currentNotifications"]],[]],"closeNotification","closeNotification"]],
+      ["block","if",[["get","checkIsLoggedIn"]],[],0,null],
+      ["block","each",[["get","controller"]],[],1,null],
+      ["content","main-footer"]
     ],
     locals: [],
-    templates: []
+    templates: [child0, child1]
   };
 }()));
 Ember.TEMPLATES['index'] =  Ember.HTMLBars.template((function() {
