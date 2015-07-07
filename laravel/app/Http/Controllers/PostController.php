@@ -10,7 +10,6 @@
 use App\Http\Requests;
 use App\Post;
 
-use Illuminate\Database\Eloquent\Model;
 use Log;
 
 use App\Services\Validation\PostValidator;
@@ -36,12 +35,13 @@ class PostController extends Controller
             $statusCode = 200;
             $response = ['posts' => []];
 
-            $posts = Post::all();
+            $posts = \DB::table('posts')
+                        ->orderBy('created_at', 'desc')->get();
 
             foreach($posts as $post) {
                 $response['posts'][] = ['id' => $post->id, 'title' => $post->title, 'image_url' => $post->image_url,
                                         'post_body' => $post->post_body, 'type' => $post->type,
-                                        'authorId' => $post->authorId,'created_at' => $post->created_at,];
+                                        'author' => $post->author,'created_at' => $post->created_at,];
             }
         } catch(\Exception $e) {
             \Log::info($e);

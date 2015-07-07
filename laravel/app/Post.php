@@ -16,5 +16,5 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [ 'title', 'image_url', 'post_body', 'type',
-                            'authorId', 'created_at', 'updated_at'];
+                            'author', 'created_at', 'updated_at'];
 }

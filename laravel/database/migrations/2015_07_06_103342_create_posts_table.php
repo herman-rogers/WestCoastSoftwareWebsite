@@ -18,8 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('image_url')->nullable();
             $table->string('post_body', 60);
             $table->string('type');
-            $table->integer('authorId');
-            $table->foreign('authorId')->references('id')->on('users');
+            $table->integer('author');
+            $table->foreign('author')->references('id')->on('users');
             $table->timestamps();
         });
     }

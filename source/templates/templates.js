@@ -52,7 +52,7 @@ Ember.TEMPLATES['components/main-footer'] =  Ember.HTMLBars.template((function()
       var el0 = dom.createDocumentFragment();
       var el1 = dom.createElement("div");
       dom.setAttribute(el1,"class","row");
-      dom.setAttribute(el1,"style","background-color: white");
+      dom.setAttribute(el1,"style","background-color: white; margin: auto");
       var el2 = dom.createTextNode("\n  ");
       dom.appendChild(el1, el2);
       var el2 = dom.createElement("footer");
@@ -1645,12 +1645,12 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           "loc": {
             "source": null,
             "start": {
-              "line": 19,
-              "column": 12
+              "line": 22,
+              "column": 18
             },
             "end": {
-              "line": 34,
-              "column": 12
+              "line": 35,
+              "column": 18
             }
           }
         },
@@ -1659,44 +1659,40 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("              ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("<section class=\"tri-sec-one\">");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n              ");
+          var el1 = dom.createTextNode("                    ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("div");
           dom.setAttribute(el1,"class","bg-info");
-          var el2 = dom.createTextNode("\n                ");
+          var el2 = dom.createTextNode("\n                      ");
           dom.appendChild(el1, el2);
           var el2 = dom.createElement("div");
           dom.setAttribute(el2,"class","box");
           dom.setAttribute(el2,"style","background-color:#d9edf7; padding-top: 10px;");
-          var el3 = dom.createTextNode("\n                  ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("h2");
-          var el4 = dom.createTextNode("POST\n                    TITLE:");
+          var el4 = dom.createTextNode("POST\n                          TITLE:");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode(" ");
           dom.appendChild(el2, el3);
           var el3 = dom.createComment("");
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("p");
-          var el4 = dom.createTextNode("POST\n                    BODY:");
+          var el4 = dom.createTextNode("POST\n                          BODY:");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode(" ");
           dom.appendChild(el2, el3);
           var el3 = dom.createComment("");
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("br");
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("button");
           dom.setAttribute(el3,"class","btn");
@@ -1704,7 +1700,7 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           var el4 = dom.createTextNode("Save New Post");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
+          var el3 = dom.createTextNode("\n                        ");
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("button");
           dom.setAttribute(el3,"class","btn");
@@ -1712,34 +1708,30 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           var el4 = dom.createTextNode("Cancel New Post");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n\n                ");
+          var el3 = dom.createTextNode("\n\n                      ");
           dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n              ");
+          var el2 = dom.createTextNode("\n                    ");
           dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n              ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createComment("</section>");
           dom.appendChild(el0, el1);
           var el1 = dom.createTextNode("\n");
           dom.appendChild(el0, el1);
           return el0;
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element6 = dom.childAt(fragment, [3, 1]);
-          var element7 = dom.childAt(element6, [11]);
-          var element8 = dom.childAt(element6, [13]);
+          var element3 = dom.childAt(fragment, [1, 1]);
+          var element4 = dom.childAt(element3, [11]);
+          var element5 = dom.childAt(element3, [13]);
           var morphs = new Array(4);
-          morphs[0] = dom.createMorphAt(element6,3,3);
-          morphs[1] = dom.createMorphAt(element6,7,7);
-          morphs[2] = dom.createElementMorph(element7);
-          morphs[3] = dom.createElementMorph(element8);
+          morphs[0] = dom.createMorphAt(element3,3,3);
+          morphs[1] = dom.createMorphAt(element3,7,7);
+          morphs[2] = dom.createElementMorph(element4);
+          morphs[3] = dom.createElementMorph(element5);
           return morphs;
         },
         statements: [
-          ["inline","textarea",[],["id","title","name","title","placeholder","Title here","value",["subexpr","@mut",[["get","model.title"]],[]],"cols","20","rows","1"]],
-          ["inline","textarea",[],["id","postBody","name","postBody","placeholder","Insert Text","value",["subexpr","@mut",[["get","model.post_body"]],[]],"cols","60","rows","15"]],
+          ["inline","textarea",[],["id","title","name","title","placeholder","Title here","value",["subexpr","@mut",[["get","title"]],[]],"cols","20","rows","1"]],
+          ["inline","textarea",[],["id","postBody","name","postBody","placeholder","Insert Text","value",["subexpr","@mut",[["get","post_body"]],[]],"cols","60","rows","15"]],
           ["element","action",["savePost"],[]],
           ["element","action",["cancelPost"],[]]
         ],
@@ -1754,12 +1746,12 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           "loc": {
             "source": null,
             "start": {
-              "line": 34,
-              "column": 12
+              "line": 35,
+              "column": 18
             },
             "end": {
               "line": 37,
-              "column": 12
+              "column": 18
             }
           }
         },
@@ -1768,7 +1760,7 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("\n              ");
+          var el1 = dom.createTextNode("                    ");
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("button");
           dom.setAttribute(el1,"class","btn");
@@ -1781,9 +1773,9 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           return el0;
         },
         buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element5 = dom.childAt(fragment, [1]);
+          var element2 = dom.childAt(fragment, [1]);
           var morphs = new Array(1);
-          morphs[0] = dom.createElementMorph(element5);
+          morphs[0] = dom.createElementMorph(element2);
           return morphs;
         },
         statements: [
@@ -1799,12 +1791,12 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
         "loc": {
           "source": null,
           "start": {
-            "line": 18,
-            "column": 8
+            "line": 20,
+            "column": 12
           },
           "end": {
-            "line": 38,
-            "column": 8
+            "line": 39,
+            "column": 12
           }
         }
       },
@@ -1813,198 +1805,7 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createComment("");
-        dom.appendChild(el0, el1);
-        return el0;
-      },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment,0,0,contextualElement);
-        dom.insertBoundary(fragment, 0);
-        dom.insertBoundary(fragment, null);
-        return morphs;
-      },
-      statements: [
-        ["block","if",[["get","$isCreatingPost"]],[],0,1]
-      ],
-      locals: [],
-      templates: [child0, child1]
-    };
-  }());
-  var child1 = (function() {
-    var child0 = (function() {
-      return {
-        meta: {
-          "revision": "Ember@1.13.2",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 42,
-              "column": 14
-            },
-            "end": {
-              "line": 44,
-              "column": 14
-            }
-          }
-        },
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes() { return []; },
-        statements: [
-
-        ],
-        locals: [],
-        templates: []
-      };
-    }());
-    var child1 = (function() {
-      return {
-        meta: {
-          "revision": "Ember@1.13.2",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 44,
-              "column": 14
-            },
-            "end": {
-              "line": 63,
-              "column": 14
-            }
-          }
-        },
-        arity: 0,
-        cachedFragment: null,
-        hasRendered: false,
-        buildFragment: function buildFragment(dom) {
-          var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("                ");
-          dom.appendChild(el0, el1);
-          var el1 = dom.createElement("section");
-          var el2 = dom.createTextNode("\n                  ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createElement("div");
-          dom.setAttribute(el2,"class","bg-info");
-          var el3 = dom.createTextNode("\n                    ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createElement("h2");
-          var el4 = dom.createComment("");
-          dom.appendChild(el3, el4);
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n\n                    ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createElement("h4");
-          var el4 = dom.createComment("");
-          dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode("\n                      ");
-          dom.appendChild(el3, el4);
-          var el4 = dom.createElement("small");
-          var el5 = dom.createTextNode("|");
-          dom.appendChild(el4, el5);
-          dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode("   ");
-          dom.appendChild(el3, el4);
-          var el4 = dom.createComment("");
-          dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode(" ");
-          dom.appendChild(el3, el4);
-          var el4 = dom.createComment("");
-          dom.appendChild(el3, el4);
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n\n                  ");
-          dom.appendChild(el2, el3);
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n                  ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createElement("a");
-          dom.setAttribute(el2,"class","thumbnail");
-          var el3 = dom.createTextNode("\n                    ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createElement("img");
-          dom.setAttribute(el3,"class","art-thumbnail");
-          dom.setAttribute(el3,"alt","");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
-          dom.appendChild(el2, el3);
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n\n                  ");
-          dom.appendChild(el1, el2);
-          var el2 = dom.createElement("div");
-          dom.setAttribute(el2,"class","bg-info");
-          var el3 = dom.createTextNode("\n                    ");
-          dom.appendChild(el2, el3);
-          var el3 = dom.createElement("p");
-          var el4 = dom.createComment("");
-          dom.appendChild(el3, el4);
-          dom.appendChild(el2, el3);
-          var el3 = dom.createTextNode("\n                  ");
-          dom.appendChild(el2, el3);
-          dom.appendChild(el1, el2);
-          var el2 = dom.createTextNode("\n                ");
-          dom.appendChild(el1, el2);
-          dom.appendChild(el0, el1);
-          var el1 = dom.createTextNode("\n\n\n");
-          dom.appendChild(el0, el1);
-          return el0;
-        },
-        buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-          var element0 = dom.childAt(fragment, [1]);
-          var element1 = dom.childAt(element0, [1]);
-          var element2 = dom.childAt(element1, [3]);
-          var element3 = dom.childAt(element0, [3]);
-          var element4 = dom.childAt(element3, [1]);
-          var morphs = new Array(7);
-          morphs[0] = dom.createMorphAt(dom.childAt(element1, [1]),0,0);
-          morphs[1] = dom.createMorphAt(element2,0,0);
-          morphs[2] = dom.createMorphAt(element2,4,4);
-          morphs[3] = dom.createMorphAt(element2,6,6);
-          morphs[4] = dom.createAttrMorph(element3, 'href');
-          morphs[5] = dom.createAttrMorph(element4, 'src');
-          morphs[6] = dom.createMorphAt(dom.childAt(element0, [5, 1]),0,0);
-          return morphs;
-        },
-        statements: [
-          ["content","post.title"],
-          ["content","post.author"],
-          ["inline","date-month",[["get","post.created_at"]],[]],
-          ["inline","date-year",[["get","post.created_at"]],[]],
-          ["attribute","href",["get","post.image_url"]],
-          ["attribute","src",["get","post.image_url"]],
-          ["inline","formatted-text",[["get","post.post_body"]],[]]
-        ],
-        locals: [],
-        templates: []
-      };
-    }());
-    return {
-      meta: {
-        "revision": "Ember@1.13.2",
-        "loc": {
-          "source": null,
-          "start": {
-            "line": 40,
-            "column": 8
-          },
-          "end": {
-            "line": 65,
-            "column": 8
-          }
-        }
-      },
-      arity: 1,
-      cachedFragment: null,
-      hasRendered: false,
-      buildFragment: function buildFragment(dom) {
-        var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("          ");
+        var el1 = dom.createTextNode("              ");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("section");
         dom.setAttribute(el1,"class","tri-sec-one");
@@ -2012,7 +1813,7 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
         dom.appendChild(el1, el2);
         var el2 = dom.createComment("");
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("          ");
+        var el2 = dom.createTextNode("              ");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
@@ -2025,10 +1826,111 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
         return morphs;
       },
       statements: [
-        ["block","if",[["get","isEditing"]],[],0,1]
+        ["block","if",[["get","isCreatingPost"]],[],0,1]
+      ],
+      locals: [],
+      templates: [child0, child1]
+    };
+  }());
+  var child1 = (function() {
+    return {
+      meta: {
+        "revision": "Ember@1.13.2",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 41,
+            "column": 12
+          },
+          "end": {
+            "line": 61,
+            "column": 12
+          }
+        }
+      },
+      arity: 1,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("              ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("section");
+        dom.setAttribute(el1,"class","bg-info");
+        dom.setAttribute(el1,"style","border: solid");
+        var el2 = dom.createTextNode("\n                ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2,"class","bg-info");
+        var el3 = dom.createTextNode("\n                  ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("h2");
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n\n                  ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("h4");
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n                  ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("small");
+        var el4 = dom.createTextNode("|");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n                ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n                ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("<a class=\"thumbnail\" >");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n                ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("<img class=\"thumbnail\" alts=\"\" />");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n                ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createComment("</a>");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n\n                ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2,"class","bg-info");
+        var el3 = dom.createTextNode("\n                  ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("p");
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n                ");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n              ");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+        var element0 = dom.childAt(fragment, [1]);
+        var element1 = dom.childAt(element0, [1]);
+        var morphs = new Array(3);
+        morphs[0] = dom.createMorphAt(dom.childAt(element1, [1]),0,0);
+        morphs[1] = dom.createMorphAt(dom.childAt(element1, [3]),0,0);
+        morphs[2] = dom.createMorphAt(dom.childAt(element0, [9, 1]),0,0);
+        return morphs;
+      },
+      statements: [
+        ["content","post.title"],
+        ["content","post.author"],
+        ["inline","formatted-text",[["get","post.post_body"]],[]]
       ],
       locals: ["post"],
-      templates: [child0, child1]
+      templates: []
     };
   }());
   return {
@@ -2041,8 +1943,8 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
           "column": 0
         },
         "end": {
-          "line": 78,
-          "column": 16
+          "line": 69,
+          "column": 0
         }
       }
     },
@@ -2069,49 +1971,66 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
       dom.setAttribute(el1,"class","tri-sec-one");
       dom.setAttribute(el1,"style","padding-top: 91px; background-color: transparent");
       dom.setAttribute(el1,"id","top");
-      var el2 = dom.createTextNode("\n  ");
+      var el2 = dom.createTextNode("\n\n  ");
       dom.appendChild(el1, el2);
       var el2 = dom.createElement("div");
-      dom.setAttribute(el2,"class","row");
+      dom.setAttribute(el2,"class","container");
       var el3 = dom.createTextNode("\n    ");
       dom.appendChild(el2, el3);
       var el3 = dom.createElement("div");
-      dom.setAttribute(el3,"class","container");
-      dom.setAttribute(el3,"style","max-width: 75%; margin: auto; background-color: white");
-      var el4 = dom.createTextNode("\n\n      ");
+      dom.setAttribute(el3,"class","row");
+      var el4 = dom.createTextNode("\n      ");
       dom.appendChild(el3, el4);
       var el4 = dom.createElement("div");
-      dom.setAttribute(el4,"class","col-lg-12");
-      dom.setAttribute(el4,"style","background-color: white");
+      dom.setAttribute(el4,"class","col-lg-14");
       var el5 = dom.createTextNode("\n        ");
       dom.appendChild(el4, el5);
-      var el5 = dom.createElement("h1");
-      var el6 = dom.createTextNode("Blog");
+      var el5 = dom.createElement("div");
+      dom.setAttribute(el5,"class","center-background");
+      var el6 = dom.createTextNode("\n          ");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createElement("section");
+      dom.setAttribute(el6,"class","tri-sec-one");
+      dom.setAttribute(el6,"style","padding: 15px");
+      var el7 = dom.createTextNode("\n            ");
+      dom.appendChild(el6, el7);
+      var el7 = dom.createElement("h1");
+      var el8 = dom.createTextNode("Blog");
+      dom.appendChild(el7, el8);
+      dom.appendChild(el6, el7);
+      var el7 = dom.createTextNode("\n\n            ");
+      dom.appendChild(el6, el7);
+      var el7 = dom.createElement("p");
+      var el8 = dom.createTextNode("\n              The latest from the team at West Coast Software.\n            ");
+      dom.appendChild(el7, el8);
+      dom.appendChild(el6, el7);
+      var el7 = dom.createTextNode("\n          ");
+      dom.appendChild(el6, el7);
+      dom.appendChild(el5, el6);
+      var el6 = dom.createTextNode("\n          ");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createComment("Create new Post - must be logged in to create a new post, otherwise the button is hidden&ndash;&gt;");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createTextNode("\n");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createComment("");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createTextNode("\n");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createComment("");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createTextNode("\n            ");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createComment("");
+      dom.appendChild(el5, el6);
+      var el6 = dom.createTextNode("\n        ");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n\n        ");
-      dom.appendChild(el4, el5);
-      var el5 = dom.createElement("p");
-      var el6 = dom.createTextNode("\n          The latest from the team at West Coast Software.\n        ");
-      dom.appendChild(el5, el6);
-      dom.appendChild(el4, el5);
-      var el5 = dom.createTextNode("\n\n      ");
+      var el5 = dom.createTextNode("\n      ");
       dom.appendChild(el4, el5);
       dom.appendChild(el3, el4);
-      var el4 = dom.createTextNode("\n");
+      var el4 = dom.createTextNode("\n    ");
       dom.appendChild(el3, el4);
-      var el4 = dom.createComment("");
-      dom.appendChild(el3, el4);
-      var el4 = dom.createTextNode("\n");
-      dom.appendChild(el3, el4);
-      var el4 = dom.createComment("");
-      dom.appendChild(el3, el4);
-      var el4 = dom.createTextNode("    ");
-      dom.appendChild(el3, el4);
-      dom.appendChild(el2, el3);
-      var el3 = dom.createTextNode("\n      ");
-      dom.appendChild(el2, el3);
-      var el3 = dom.createComment("");
       dom.appendChild(el2, el3);
       var el3 = dom.createTextNode("\n  ");
       dom.appendChild(el2, el3);
@@ -2119,57 +2038,26 @@ Ember.TEMPLATES['blog'] =  Ember.HTMLBars.template((function() {
       var el2 = dom.createTextNode("\n");
       dom.appendChild(el1, el2);
       dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("<script>");
-      dom.appendChild(el0, el1);
       var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("$(document).ready(function () {");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("$(\".fancybox\").fancybox({");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("openEffect: \"none\",");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("closeEffect: \"none\"");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("});");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("});");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createTextNode("\n");
-      dom.appendChild(el0, el1);
-      var el1 = dom.createComment("</script>");
       dom.appendChild(el0, el1);
       return el0;
     },
     buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-      var element9 = dom.childAt(fragment, [0]);
-      var element10 = dom.childAt(fragment, [2, 1]);
-      var element11 = dom.childAt(element10, [1]);
+      var element6 = dom.childAt(fragment, [0]);
+      var element7 = dom.childAt(fragment, [2, 1, 1, 1, 1]);
       var morphs = new Array(5);
-      morphs[0] = dom.createMorphAt(element9,1,1);
-      morphs[1] = dom.createMorphAt(element9,3,3);
-      morphs[2] = dom.createMorphAt(element11,3,3);
-      morphs[3] = dom.createMorphAt(element11,5,5);
-      morphs[4] = dom.createMorphAt(element10,3,3);
+      morphs[0] = dom.createMorphAt(element6,1,1);
+      morphs[1] = dom.createMorphAt(element6,3,3);
+      morphs[2] = dom.createMorphAt(element7,5,5);
+      morphs[3] = dom.createMorphAt(element7,7,7);
+      morphs[4] = dom.createMorphAt(element7,9,9);
       return morphs;
     },
     statements: [
       ["content","main-header"],
       ["inline","notification-list",[],["notifications",["subexpr","@mut",[["get","application.currentNotifications"]],[]],"closeNotification","closeNotification"]],
       ["block","if",[["get","checkIsLoggedIn"]],[],0,null],
-      ["block","each",[["get","controller"]],[],1,null],
+      ["block","each",[["get","model"]],[],1,null],
       ["content","main-footer"]
     ],
     locals: [],

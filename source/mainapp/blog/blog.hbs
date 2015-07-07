@@ -4,75 +4,65 @@
 </div>
 
 <section class="tri-sec-one" style="padding-top: 91px; background-color: transparent" id="top">
-  <div class="row">
-    <div class="container" style="max-width: 75%; margin: auto; background-color: white">
 
-      <div class="col-lg-12" style="background-color: white">
-        <h1>Blog</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-14">
+        <div class="center-background">
+          <section class="tri-sec-one" style="padding: 15px">
+            <h1>Blog</h1>
 
-        <p>
-          The latest from the team at West Coast Software.
-        </p>
-
-      </div>
-        {{#if checkIsLoggedIn}}
-            {{#if $isCreatingPost}}
-              <!--<section class="tri-sec-one">-->
-              <div class="bg-info">
-                <div class="box" style="background-color:#d9edf7; padding-top: 10px;">
-                  <h2>POST
-                    TITLE:</h2> {{textarea id="title" name="title" placeholder='Title here' value=model.title cols="20" rows="1"}}
-                  <p>POST
-                    BODY:</p> {{textarea id="postBody" name="postBody" placeholder="Insert Text" value=model.post_body cols="60" rows="15"}}
-                  <br>
-                  <button class="btn" type="submit" {{action 'savePost'}}>Save New Post</button>
-                  <button class="btn" type="submit" {{action 'cancelPost'}}>Cancel New Post</button>
-
-                </div>
-              </div>
-              <!--</section>-->
-            {{else}}
-
-              <button class="btn" type="submit" {{action 'newPost'}}>Create New Post</button>
-            {{/if}}
-        {{/if}}
-
-        {{#each post in controller}}
-          <section class="tri-sec-one">
-              {{#if isEditing}}
-
-              {{else}}
-                <section>
-                  <div class="bg-info">
-                    <h2>{{post.title}}</h2>
-
-                    <h4>{{post.author}}
-                      <small>|</small>   {{date-month post.created_at}} {{date-year post.created_at}}</h4>
-
-                  </div>
-                  <a class="thumbnail" {{bind-attr href=post.image_url}}>
-                    <img class="art-thumbnail" alt="" {{bind-attr src=post.image_url}}/>
-                  </a>
-
-                  <div class="bg-info">
-                    <p>{{formatted-text post.post_body}}</p>
-                  </div>
-                </section>
-
-
-              {{/if}}
+            <p>
+              The latest from the team at West Coast Software.
+            </p>
           </section>
-        {{/each}}
+          <!--Create new Post - must be logged in to create a new post, otherwise the button is hidden&ndash;&gt;-->
+            {{#if checkIsLoggedIn}}
+              <section class="tri-sec-one">
+                  {{#if isCreatingPost}}
+                    <div class="bg-info">
+                      <div class="box" style="background-color:#d9edf7; padding-top: 10px;">
+                        <h2>POST
+                          TITLE:</h2> {{textarea id="title" name="title" placeholder='Title here' valueBinding="title" cols="20" rows="1"}}
+                        <p>POST
+                          BODY:</p> {{textarea id="postBody" name="postBody" placeholder="Insert Text" valueBinding="post_body" cols="60" rows="15"}}
+                        <br>
+                        <button class="btn" type="submit" {{action 'savePost'}}>Save New Post</button>
+                        <button class="btn" type="submit" {{action 'cancelPost'}}>Cancel New Post</button>
+
+                      </div>
+                    </div>
+                  {{else}}
+                    <button class="btn" type="submit" {{action 'newPost'}}>Create New Post</button>
+                  {{/if}}
+              </section>
+            {{/if}}
+
+            {{#each post in model}}
+            {{!#if isEditing}}
+            {{!else}}
+              <section class="bg-info" style="border: solid">
+                <div class="bg-info">
+                  <h2>{{post.title}}</h2>
+
+                  <h4>{{post.author}}</h4>
+                  <small>|</small>
+                </div>
+
+                <!--<a class="thumbnail" {{!bind-attr href=post.image_url}}>-->
+                <!--<img class="thumbnail" alts="" {{!bind-attr src=post.image_url}}/>-->
+                <!--</a>-->
+
+                <div class="bg-info">
+                  <p>{{formatted-text post.post_body}}</p>
+                </div>
+              </section>
+            {{!/if}}
+            {{/each}}
+
+            {{main-footer}}
+        </div>
+      </div>
     </div>
-      {{main-footer}}
   </div>
 </section>
-
-<!--<script>-->
-<!--$(document).ready(function () {-->
-<!--$(".fancybox").fancybox({-->
-<!--openEffect: "none",-->
-<!--closeEffect: "none"-->
-<!--});-->
-<!--});-->
-<!--</script>-->

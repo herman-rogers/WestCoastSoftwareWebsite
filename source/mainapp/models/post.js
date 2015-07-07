@@ -8,7 +8,7 @@ App.Post = DS.Model.extend( {
     image_url: DS.attr( 'string' ),
     post_body: DS.attr( 'string' ),
     type: DS.attr('string'),
-    authorId: DS.attr('number'),
+    author: DS.attr(),
     created_at: DS.attr()
 
 } );

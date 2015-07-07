@@ -10,5 +10,9 @@ App.IndexView = Ember.View.extend({
 App.IndexController = Ember.Controller.extend({
 
 
+    loggedIn: function() {
+        return App.Session.get( 'authToken' );
+    }.property( 'App.Session.authToken' )
+
 
 });

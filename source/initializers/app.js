@@ -65,7 +65,15 @@ App.ApplicationController = Ember.Controller.extend({
 
     updateCurrentPath: function() {
         App.set('currentPath', this.get('currentPath'));
-    }.observes('currentPath')
+    }.observes('currentPath'),
+
+
+    loggedIn: function() {
+        return App.Session.get( 'authToken' );
+    }.property( 'App.Session.authToken' )
+
+
+
 });
 
 App.ApplicationAdapter = DS.RESTAdapter.extend({
